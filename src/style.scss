@@ -1,0 +1,94 @@
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+$Blue: hsl(248, 32%, 49%);
+$DarkBlue: hsl(249, 10%, 26%);
+$GrayishBlue: hsl(246, 25%, 77%);
+$FontSize: 16px;
+$mobile-width: 355px;
+
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 80px;
+  
+  .container {
+    font-size: $FontSize;
+    max-width: 400px;
+    max-height: 400vh;
+    margin-left: 35px;
+    margin-bottom: 20px;
+
+    .box {
+      box-shadow: rgba(5, 5, 5, 0.036) 0px 10px 10px, rgba(0, 0, 0, 0.068) 0px 10px 10px;
+      background-color: $Blue;
+      margin-bottom: 20px;
+      padding: 7px 0;
+      border-radius: 5px;
+      
+      p {
+        color: #ffffff9d;
+        span {
+          color: #fff;
+        }
+      }
+    }
+    
+    .form {
+      background-color: #fff;
+      border-radius: 7px;
+      padding: 25px;
+      
+      box-shadow: rgba(5, 5, 5, 0.036) 0px 10px 10px, rgba(0, 0, 0, 0.068) 0px 10px 10px;
+      .input-group{
+        margin-bottom: 13px;
+        input{
+          border: 0.5px solid #cfcdcd98;
+          padding: 10px 0;
+          border-radius: 6px;
+          width: 100%;
+        }
+      }
+      
+      button {
+        box-shadow: rgba(5, 5, 5, 0.036) 0px 10px 10px, rgba(0, 0, 0, 0.068) 0px 10px 10px;
+        border-radius: 5px;
+          background-color: $Green;
+          padding: 13px;
+          width: 100%;
+          font-size: $FontSize;
+          color: #fff;
+          cursor: pointer;
+          border: none;
+          margin-bottom: 7px;
+        }
+      
+
+      p {
+        color: $GrayishBlue;
+        a {
+          color: $Red;
+        }
+      }
+
+    }
+  }
+
+  .header-card {
+
+    max-width: 400px;
+    color: #fff;
+    margin: 10px 26px 16px 50px;
+    h1 {
+      margin-bottom: 16px;
+    }
+    
+    p {
+      font-size: $FontSize;
+      color: $GrayishBlue;
+    }
+  }
+}

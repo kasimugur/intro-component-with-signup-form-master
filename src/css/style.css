@@ -1,0 +1,73 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 80px;
+}
+.App .container {
+  font-size: 16px;
+  max-width: 400px;
+  max-height: 400vh;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+.App .container .box {
+  box-shadow: rgba(5, 5, 5, 0.036) 0px 10px 10px, rgba(0, 0, 0, 0.068) 0px 10px 10px;
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 20px;
+  padding: 7px 0;
+  border-radius: 5px;
+}
+.App .container .box p {
+  color: rgba(255, 255, 255, 0.6156862745);
+}
+.App .container .box p span {
+  color: #fff;
+}
+.App .container .form {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 25px;
+  box-shadow: rgba(5, 5, 5, 0.036) 0px 10px 10px, rgba(0, 0, 0, 0.068) 0px 10px 10px;
+}
+.App .container .form .input-group {
+  margin-bottom: 13px;
+}
+.App .container .form .input-group input {
+  border: 0.5px solid rgba(207, 205, 205, 0.5960784314);
+  padding: 10px 0;
+  border-radius: 6px;
+  width: 100%;
+}
+.App .container .form button {
+  box-shadow: rgba(5, 5, 5, 0.036) 0px 10px 10px, rgba(0, 0, 0, 0.068) 0px 10px 10px;
+  border-radius: 5px;
+  background-color: hsl(154, 59%, 51%);
+  padding: 13px;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 7px;
+}
+.App .container .form p {
+  color: hsl(246, 25%, 77%);
+}
+.App .container .form p a {
+  color: hsl(0, 100%, 74%);
+}
+.App .header-card {
+  max-width: 400px;
+  color: #fff;
+  margin: 10px 26px 16px 50px;
+}
+.App .header-card h1 {
+  margin-bottom: 16px;
+}
+.App .header-card p {
+  font-size: 16px;
+  color: hsl(246, 25%, 77%);
+}/*# sourceMappingURL=style.css.map */
