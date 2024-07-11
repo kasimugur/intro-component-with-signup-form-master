@@ -41,6 +41,19 @@
   border-radius: 6px;
   width: 100%;
 }
+.App .container .form .input-group .error {
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  margin: 5px 0;
+  text-align: end;
+  display: flex;
+  justify-content: end;
+}
+.App .container .form .input-group .error ::before {
+  content: url("./images/icon-error.svg");
+  font-size: 14px;
+  vertical-align: middle;
+}
 .App .container .form button {
   box-shadow: rgba(5, 5, 5, 0.036) 0px 10px 10px, rgba(0, 0, 0, 0.068) 0px 10px 10px;
   border-radius: 5px;

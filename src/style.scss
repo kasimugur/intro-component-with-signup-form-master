@@ -4,7 +4,7 @@ $Blue: hsl(248, 32%, 49%);
 $DarkBlue: hsl(249, 10%, 26%);
 $GrayishBlue: hsl(246, 25%, 77%);
 $FontSize: 16px;
-$mobile-width: 355px;
+$mobile-width: 375px;
 
 
 .App {
@@ -51,6 +51,20 @@ $mobile-width: 355px;
           border-radius: 6px;
           width: 100%;
         }
+        .error{
+          color: $Red;
+          font-size: 12px;
+          margin: 5px 0;
+          text-align: end;
+          display: flex;
+          justify-content: end;
+        ::before{
+          content: url('./images/icon-error.svg');
+          font-size: 14px;
+          vertical-align: middle;
+        }
+        }
+
       }
       
       button {
