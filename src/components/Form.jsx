@@ -46,7 +46,12 @@ export default function Form() {
   const inputHandleChange = (e) => {
     const { name, value } = e.target
     setFormData({ ...formData, [name]: value })
-  } 
+  }
+
+  const icoError = <svg className="icons" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none"
+    fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12" /><rect
+      fill="#FFF" x="11" y="6" width="2" height="9" rx="1" /><rect fill="#FFF" x="11"
+        y="17" width="2" height="2" rx="1" /></g></svg>
 
   return (
     <>
@@ -56,35 +61,52 @@ export default function Form() {
         </div>
         <form className="form" onSubmit={handleSubmit} >
           <div className="input-group">
-            <input
-              value={formData.firstName} onChange={inputHandleChange}
-              name="firstName"
-              type="text" placeholder="First Name" />
+            <div className="inpt-group-icon">
+              <input
+                className={`${(error.firstName && !formData.firstName) && 'inptError'} `}
+                value={formData.firstName} onChange={inputHandleChange}
+                name="firstName"
+                type="text" placeholder="First Name" />
+              {(error.firstName && !formData.firstName) && icoError}
+            </div>
             {!formData.firstName && <span className="error">
               {error.firstName}</span>}
           </div>
           <div className="input-group">
-            <input
-              value={formData.lastName} onChange={inputHandleChange}
-              name="lastName"
-              type="text" placeholder="Last Name " />
+            <div className="inpt-group-icon">
+              <input
+                className={`${(error.lastName && !formData.lastName) && 'inptError'} `}
+                value={formData.lastName} onChange={inputHandleChange}
+                name="lastName"
+                type="text" placeholder="Last Name " />
+              {(error.lastName && !formData.lastName) && icoError}
+            </div>
             {!formData.lastName && <span className="error">
               {error.lastName}</span>}
           </div>
           <div className="input-group">
-            <input
-              value={formData.email} onChange={inputHandleChange}
-              name="email"
-              type="email" placeholder="Email Address" />
+            <div className="inpt-group-icon">
+              <input
+                className={`${(error.email && !formData.email) && 'inptError'} `}
+                value={formData.email} onChange={inputHandleChange}
+                name="email"
+                type="email"
+                placeholder={`${(error.firstName && !formData.firstName) ? 'email@example/com' : "Email Address"} `} />
+              {(error.email && !formData.email) && icoError}
+            </div>
             {!formData.email &&
               <span className="error"> {error.email} </span> ||
               <span className="error"> {error.Invalid} </span>}
           </div>
           <div className="input-group">
-            <input
-              value={formData.password} onChange={inputHandleChange}
-              name="password"
-              type="password" placeholder="Password" />
+            <div className="inpt-group-icon">
+              <input
+                className={`${(error.password && !formData.password) && 'inptError'} `}
+                value={formData.password} onChange={inputHandleChange}
+                name="password"
+                type="password" placeholder="Password" />
+              {(error.password && !formData.password) && icoError}
+            </div>
             {!formData.password && <span className="error">
               {error.password}</span>}
           </div>
