@@ -10,6 +10,7 @@ $mobile-width: 375px;
 // font-weight: 100;
 
 .App {
+  transition: all ease-in 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,19 +67,20 @@ $mobile-width: 375px;
             &::placeholder {
               color: $Red;
             }
-            
+
             // border-radius: 4px;
-          &:active,
-          &:focus {
-            border: 2px solid $Red;
-          }
+            &:active,
+            &:focus {
+              border: 2px solid $Red;
+            }
 
           }
-          .icons{
+
+          .icons {
             right: 7px;
             position: absolute;
             top: 7px;
-      
+
           }
         }
 
@@ -137,7 +139,7 @@ $mobile-width: 375px;
     h1 {
       font-family: "Poppins", sans-serif;
       font-weight: 700;
-      margin-bottom: 16px;
+      margin-bottom: 1rem;
     }
 
     p {
@@ -148,4 +150,50 @@ $mobile-width: 375px;
 }
 
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 768px) {
+
+  .header-card {
+    width: 300px;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .box {
+    padding: 0.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #root {
+    background-image: url(./images/bg-intro-mobile.png) !important;
+  }
+*{
+  overflow-y: auto !important;
+}
+  .App {
+    transition: all ease-in-out 0.3s;
+    margin: 0 1rem;
+    flex-direction: column;
+
+    .container {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .header-card {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h1 {
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 0.5rem;
+    }
+  }
+}
