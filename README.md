@@ -1,5 +1,4 @@
 # registration form
-This is a solution to the
 
 ## Table of contents
 
