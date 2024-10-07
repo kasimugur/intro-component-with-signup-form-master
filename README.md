@@ -1,8 +1,44 @@
-# React + Vite
+# registration form
+This is a solution to the
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of contents
 
-Currently, two official plugins are available:
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
+
+### screenshot
+![](./screenshot.jpg) 
+
+### Links
+
+- Live Site URL: [live site](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- SASS and CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://vite.dev/) - React framework
+
+### What I learned
+
+```JS
+  const inputHandleChange = (e) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+  }
+```
+
+```CSS
+text-transform: uppercase;
+```
+
